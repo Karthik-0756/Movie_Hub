@@ -28,7 +28,7 @@ const HomePageTrending = () => {
                 <div className="mt-2 mb-10 md:mb-20 flex overflow-x-auto gap-2 flex-nowrap scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {popular.map(movie => (
                         <div key={movie.id} className="bg-neutral-primary-soft h-60  md:h-auto block w-40 md:w-60  rounded-base shrink-0 shadow-xs">
-                            <div className="overflow-hidden rounded-md ">
+                            <div className="overflow-hidden rounded-md hover:scale-103 transition duration-200">
                                 <img
                                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                     alt={movie.title}

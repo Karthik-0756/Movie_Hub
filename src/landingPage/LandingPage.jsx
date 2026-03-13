@@ -33,17 +33,31 @@ const LandingPage = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center">
+                        <div className="flex items-center space-x-4">
+
                             <input
                                 placeholder="Search"
-                                className="w-30 md:w-40 h-8 border border-gray-500 bg-black/50 rounded mr-2 md:mr-4 pl-2 text-white text-sm focus:outline-none focus:border-white"
+                                className="w-32 md:w-44 h-8 border border-gray-500 bg-black/50 rounded px-2 text-white text-sm focus:outline-none focus:border-white"
                                 type="text"
                             />
-                            <img
-                                className="w-8 h-8 rounded"
-                                src="https://encrypted-tbn0.gstatic.com"
-                                alt="Profile"
-                            />
+
+                            <div className="flex items-center cursor-pointer group">
+                                <img
+                                    className="w-8 h-8 rounded-md"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+                                    alt="Profile"
+                                />
+                                {/* <svg
+                                    className="w-4 h-4 ml-1 text-white group-hover:rotate-180 transition"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg> */}
+                            </div>
+
                         </div>
                     </div>
                 </nav>
