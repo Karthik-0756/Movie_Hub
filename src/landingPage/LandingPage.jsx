@@ -19,7 +19,7 @@ const LandingPage = () => {
                 }}
                 className="bg-cover bg-center w-full h-[80vh] relative"
             >
-                <nav className="md:mx-20">
+                <nav className="md:mx-20 mx-5">
                     <div className="flex justify-between pt-4">
                         <div className="flex items-center">
                             <h1 className="text-2xl text-red-600 font-bold">Movie_Hub</h1>
@@ -36,7 +36,7 @@ const LandingPage = () => {
                         <div className="flex items-center">
                             <input
                                 placeholder="Search"
-                                className="w-40 h-8 border border-gray-500 bg-black/50 rounded mr-4 pl-2 text-white text-sm focus:outline-none focus:border-white"
+                                className="w-30 md:w-40 h-8 border border-gray-500 bg-black/50 rounded mr-2 md:mr-4 pl-2 text-white text-sm focus:outline-none focus:border-white"
                                 type="text"
                             />
                             <img
@@ -47,7 +47,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </nav>
-                <div className="ml-30">
+                <div className="md:ml-30 ml-2">
                     <img src={heroInfo} alt="" className="mt-60 w-100 h-50" />
                     <div className="mt-10">
                         <button className="w-22 h-10 rounded-2xl bg-red-500 text-white">Play</button>

@@ -49,7 +49,7 @@ import MovieSelected from '../MovieSelection/SelectedMovie'
 
                  <div className="mt-2 mb-20 flex overflow-x-auto gap-2 flex-nowrap scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {actionMovie.map(movie => (
-                        <div key={movie.id} className="bg-neutral-primary-soft h-auto block w-60  rounded-base shrink-0 shadow-xs">
+                        <div key={movie.id} className="bg-neutral-primary-soft h-auto block w-40 md:w-60  rounded-base shrink-0 shadow-xs">
                             <div className="overflow-hidden rounded-md cursor-pointer">
                                 <img
                                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

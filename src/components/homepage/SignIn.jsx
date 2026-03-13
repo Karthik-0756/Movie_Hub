@@ -55,12 +55,12 @@ const SignIn = () => {
         style={{ backgroundImage: `url(${bgImage})` }}
       />
 
-      <div className="md:ml-140 md:mt-40 border-2 w-100 h-110">
+      <div className="md:ml-140 ml-10 mt-40  border-2 w-80 md:w-100 md:h-110">
         <h1 className="text-3xl text-center mt-5 text-red-500 font-bold">
           Sign In
         </h1>
 
-        <form onSubmit={showdetails} className="ml-10 mt-15">
+        <form onSubmit={showdetails} className="ml-10 mt-15 ">
 
           <input
             required
@@ -69,7 +69,7 @@ const SignIn = () => {
             onChange={handleChange}
             type="text"
             placeholder="Enter your Name"
-            className="border-2 mb-2 rounded w-80 p-3"
+            className="border-2 mb-2 rounded w-60 md:w-80 p-3"
           />
 
           <input
@@ -79,7 +79,7 @@ const SignIn = () => {
             onChange={handleChange}
             type="tel"
             placeholder="Enter your Number"
-            className="border-2 mb-2 rounded w-80 p-3"
+            className="border-2 mb-2 rounded w-60 md:w-80 p-3"
           />
 
           <input
@@ -89,7 +89,7 @@ const SignIn = () => {
             onChange={handleChange}
             type="email"
             placeholder="Enter your Email"
-            className="border-2 mb-2 rounded w-80 p-3"
+            className="border-2 mb-2 rounded w-60 md:w-80 p-3"
           />
 
           <input
@@ -99,12 +99,12 @@ const SignIn = () => {
             onChange={handleChange}
             type="password"
             placeholder="Enter your Password"
-            className="border-2 rounded w-80 p-3"
+            className="border-2 rounded w-60 md:w-80 p-3"
           />
 
           <button
             type="submit"
-            className="w-20 h-10 bg-red-400 rounded hover:bg-red-500 cursor-pointer text-white mt-5"
+            className="w-20 h-10 bg-red-400 rounded hover:bg-red-500 cursor-pointer text-white mt-5 mb-5"
           >
             Login
           </button>

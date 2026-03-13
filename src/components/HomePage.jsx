@@ -21,7 +21,7 @@ const HomePage = () => {
                             <option value="">Tamil</option>
                             <option value="">Hindi</option>
                         </select>
-                        <button onClick={() => navigate('/login')} className=" cursor-pointer h-6 md:h-8 w-10 w-15 md:w-20 ml-2 md:ml-3 bg-red-600 text-gray-300 border-white rounded-sm">Login </button>
+                        <button onClick={() => navigate('/login')} className=" cursor-pointer h-6 md:h-8 w-10 w-15 md:w-20 ml-2 md:ml-3 bg-red-600 text-gray-300 border-white rounded-sm  md:p-0">Login </button>
                     </div>
 
 

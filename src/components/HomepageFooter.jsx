@@ -20,7 +20,7 @@ const HomepageFooter = () => {
                             <a className="mb-2 underline" href="">Corporate Information</a>
                             <a className="mb-2 underline" href="">Legal Notices</a>
                         </div>
-                        <div className="hidden md:block  flex-col mr-4 md:mr-50 " >
+                        <div className="hidden md:flex  flex-col mr-4 md:mr-50 " >
                             <a className="mb-2 underline" href="">Account</a>
                             <a className="mb-2 underline" href="">Netflix Shop</a>
                             <a className="mb-2 underline" href="">Terms of Use</a>
@@ -42,7 +42,7 @@ const HomepageFooter = () => {
                     <option value="">Franch</option>
                 </select>
                 <h5 className="mt-5">Movie_Hub India</h5>
-                <p className="mt-5 pb-20"> This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+                <p className="mt-5  md:pb-20"> This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
 
             </footer>
 
