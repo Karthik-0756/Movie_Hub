@@ -62,7 +62,7 @@ const LandingPage = () => {
             </div>
 
             {/* Movies Content: Moved outside the hero div to sit on the black background */}
-            <div className="md:mx-20 px-4 md:px-0 -mt-15 relative z-10 space-y-10 pb-20">
+            <div className="md:mx-20 px-4 md:px-0 -mt-15 relative z-10 space-y-10 ">
                 <HomePageTrending />
                 <ActionMovies />
                 <AdventureMovie />

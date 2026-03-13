@@ -108,18 +108,18 @@ const SelectedMovie = () => {
                 <AdventureMovie />
                 <ComedyMovies />
             </div> */}
-            <div className=" mx-4 md:mx-40 pt-10 md:pt-30  ">
+            <div className=" mx-4 md:mx-40 pt-5 md:pt-30  md:pb-30">
 
-                <div className="md:flex pb-10 ">
+                <div className="md:flex  ">
                     <div>
-                        <img className="md:h-150 h-80 w-50 rounded-2xl md:mb-30" src={bgImage} alt="" />
+                        <img className="md:h-130 h-100  w-full md:mt-20  rounded-2xl" src={bgImage} alt="" />
 
                     </div>
                     <div className="md:pl-30 mt-5">
                         <h1 className="md:text-5xl text-3xl uppercase font-bold">Title : {movie.title}</h1>
                         <div className="flex mt-5 md:mt-15">
                             {movie.genres?.map((genres) => (
-                                <p className="md:w-50 h-10 rounded bg-gray-900 p-2 mr-5 text-white text-center" key={genres.id}>{genres.name}</p>
+                                <p className="md:w-35 h-10 rounded bg-gray-900 p-2 mr-5 text-white text-center" key={genres.id}>{genres.name}</p>
                             ))}
                         </div>
                         <div className="md:flex   ">
@@ -145,7 +145,7 @@ const SelectedMovie = () => {
                 {viewTrailer && (
                     <>
                         <h1 id="trailer" className="text-4xl underline ">TRAILER</h1>
-                        <iframe className="md:w-300 w-70  md:h-150 mt-10  pb-10 md:pb-30" src={`https://www.youtube.com/embed/${videoKey}`} frameborder="0"></iframe>
+                        <iframe className="md:w-300 w-70  md:h-150 mt-10  pb-10 " src={`https://www.youtube.com/embed/${videoKey}`} frameborder="0"></iframe>
 
 
                         {/* <div className="w-150  bg-gray-200 ml-70 mb-30 ">
