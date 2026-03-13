@@ -108,7 +108,7 @@ const SelectedMovie = () => {
                 <AdventureMovie />
                 <ComedyMovies />
             </div> */}
-            <div className=" mx-4 md:mx-40 pt-5 md:pt-30  md:pb-30">
+            <div className=" mx-4 md:mx-40 pt-5 md:pt-30 pb-10 md:pb-30">
 
                 <div className="md:flex  ">
                     <div>
@@ -144,8 +144,8 @@ const SelectedMovie = () => {
                 </div>
                 {viewTrailer && (
                     <>
-                        <h1 id="trailer" className="text-4xl underline ">TRAILER</h1>
-                        <iframe className="md:w-300 w-70  md:h-150 mt-10  pb-10 " src={`https://www.youtube.com/embed/${videoKey}`} frameborder="0"></iframe>
+                        <h1 id="trailer" className="text-4xl underline mt-10 ">TRAILER</h1>
+                        <iframe className="md:w-300 w-90  md:h-150 mt-10  pb-10 " src={`https://www.youtube.com/embed/${videoKey}`} frameborder="0"></iframe>
 
 
                         {/* <div className="w-150  bg-gray-200 ml-70 mb-30 ">
