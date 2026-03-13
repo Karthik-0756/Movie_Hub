@@ -36,14 +36,16 @@ const HomepageFooter = () => {
                         </div>
                     </div>
                 </div>
-                
-                <select className="mt-5 w-30 h-10 text-center   border rotate-1" name="" id="">
-                    <option value="">English</option>
-                    <option value="">Franch</option>
-                </select>
-                <h5 className="mt-5">Movie_Hub India</h5>
-                <p className="mt-5  md:pb-20"> This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
 
+                <div className="text-gray-400">
+                    <select className="mt-5 w-30 h-10 text-center   border rotate-1 " name="" id="">
+                        <option value="">English</option>
+                        <option value="">Franch</option>
+                    </select>
+                    <h5 className="mt-5">Movie_Hub India</h5>
+                    <p className="mt-5 "> This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+
+                </div>
             </footer>
 
         </div>

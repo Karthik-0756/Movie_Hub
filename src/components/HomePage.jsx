@@ -16,12 +16,12 @@ const HomePage = () => {
                 <div className="container  " style={{ display: "flex", justifyContent: "space-between" }}>
                     <h1 className="text-red-700 ml-5 md:ml-40 mt-5 font-bold text-3xl md:text-4xl font-netflix ">Movie_Hub</h1>
                     <div className=" mr-5 md:mr-40 mt-5 ">
-                        <select className="w-20 md:w-30 h-6 md:h-8 border-2  border-white md:font-bold text-white text-center rounded-sm bg-gray-800  ">
+                        <select className="w-20 md:w-30 h-8  border-2  border-white md:font-bold text-white text-center rounded-sm bg-gray-800  ">
                             <option value="">English</option>
                             <option value="">Tamil</option>
                             <option value="">Hindi</option>
                         </select>
-                        <button onClick={() => navigate('/login')} className=" cursor-pointer h-6 md:h-8 w-10 w-15 md:w-20 ml-2 md:ml-3 bg-red-600 text-gray-300 border-white rounded-sm  md:p-0">Login </button>
+                        <button onClick={() => navigate('/login')} className=" cursor-pointer h-8 w-10 w-15 md:w-20 ml-2 md:ml-3 bg-red-600 text-white border-white rounded-sm  md:p-0">Login </button>
                     </div>
 
 
