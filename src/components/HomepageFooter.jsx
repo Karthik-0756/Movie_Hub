@@ -1,7 +1,7 @@
 import React from "react";
 const HomepageFooter = () => {
     return (
-        <div className="  mt-10">
+        <div className="  mt-10 pb-10">
             <footer >
                 <p className="underline">Questions? Contact us.</p>
                 <div className="flex mt-8 text-gray-300" >

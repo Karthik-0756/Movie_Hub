@@ -20,7 +20,7 @@ const loginPage = () => {
     }
     const handleShow=async(e)=>{
          e.preventDefault(); 
-        const response =await axios.post("http://localhost:3000/login/newUser",user)
+        const response =await axios.post("https://movie-hub-backend-zo2m.onrender.com/login/newUser",user)
         alert(response.data)
        if (response.data === "success"){
          navigate('/landingPage');
