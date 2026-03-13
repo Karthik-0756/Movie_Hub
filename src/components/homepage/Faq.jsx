@@ -13,27 +13,27 @@ function Accordion() {
 
   const faq = [
     {
-      question: "What is Netflix?",
-      answer: "Netflix is a streaming service.",
+      question: "What is MovieHub?",
+      answer: "MovieHub is a movie information service.",
     },
     {
       question: "How much does it cost?",
-      answer: "It depends on your subscription plan.",
+      answer: "It free for everyone to use.",
     },
     {
-      question: "Can I cancel anytime?",
-      answer: "Yes, you can cancel anytime.",
+      question: "Is it give original movie?",
+      answer: "Yes, moviehub gives a real-time movie updates",
     },
   ];
 
   return (
     <div className="mt-10">
-      <h1 className="font-bold text-2xl text-start pl-30  mb-5">
+      <h1 className="font-bold text-2xl text-start pl-3 md:pl-30  mb-5">
         Frequently Asked Questions
       </h1>
 
       {faq.map((item, index) => (
-        <div key={index} className="mb-3 mx-30">
+        <div key={index} className="mb-3 mx-3 md:mx-30">
           
           {/* Button */}
           <div

@@ -18,8 +18,9 @@ const loginPage = () => {
         SetUser({...user,   [name]:value})
         // console.log(value)
     }
-    const handleShow=async()=>{
-        const response =await axios.post("https://movie-hub-backend-zo2m.onrender.com/login/newUser",user)
+    const handleShow=async(e)=>{
+         e.preventDefault(); 
+        const response =await axios.post("http://localhost:3000/login/newUser",user)
         alert(response.data)
        if (response.data === "success"){
          navigate('/landingPage');
@@ -48,12 +49,13 @@ const loginPage = () => {
                 </div>
                   <div className="md:ml-140 md:mt-40 border-2   w-100 h-100 text-white    ">
                         <h1 className="text-3xl text-center mt-5 text-red-500 font-bold ">Login</h1>
-                        <div className="ml-10 mt-15">
-                            <input type="text" name="name" onChange={handleUser} placeholder="Enter your Phone Number" className="border-2 mb-8 rounded w-80 p-3" />
-                            <input type="password" name="password" onChange={handleUser} placeholder="Enter your Password" className="border-2 rounded w-80 p-3" />
-                            <button onClick={handleShow} className="w-20 h-10 bg-red-400 rounded text-m hover:bg-red-500 cursor-pointer text-white mt-5  ">Login</button>
+                        <form onSubmit={handleShow} className="ml-10 mt-15">
+                            
+                            <input type="text" required name="name" onChange={handleUser} placeholder="Enter your Phone Number" className="border-2 mb-8 rounded w-80 p-3" />
+                            <input type="password" required name="password" onChange={handleUser} placeholder="Enter your Password" className="border-2 rounded w-80 p-3" />
+                            <button   className="w-20 h-10 bg-red-400 rounded text-m hover:bg-red-500 cursor-pointer text-white mt-5  ">Login</button>
 
-                        </div>
+                        </form>
                         <div className="flex ml-25 mt-8 ">
                             <p className="text-m ">Dont you have account?</p>
                             <span onClick={() => navigate("/signIn")} className="text-blue-400 text-m cursor-pointer underline">  Sign in</span>

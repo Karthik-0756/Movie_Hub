@@ -5,29 +5,29 @@ const HomepageFooter = () => {
             <footer >
                 <p className="underline">Questions? Contact us.</p>
                 <div className="flex mt-8 text-gray-300" >
-                    <div className="flex ">
-                        <div className=" flex flex-col  mr-50  ">
+                    <div className="flex text-m ">
+                        <div className=" flex flex-col mr-4   md:mr-50  ">
                             <a className="mb-2 underline" href="">FAQ</a>
                             <a className="mb-2 underline" href="">Investor Relations</a>
                             <a className="mb-2 underline" href="">Buy Gift Cards</a>
                             <a className="mb-2 underline" href="">Cookie Preferences</a>
                             <a className="mb-2 underline" href="">Legal Guarantee</a>
                         </div>
-                        <div className=" flex flex-col mr-50 " >
+                        <div className=" flex flex-col mr-4 md:mr-50 " >
                             <a className="mb-2 underline" href="">Help Center</a>
                             <a className="mb-2 underline" href="">Jobs</a>
                             <a className="mb-2 underline" href="">Ways to Watch</a>
                             <a className="mb-2 underline" href="">Corporate Information</a>
                             <a className="mb-2 underline" href="">Legal Notices</a>
                         </div>
-                        <div className=" flex flex-col mr-50 " >
+                        <div className="hidden md:block  flex-col mr-4 md:mr-50 " >
                             <a className="mb-2 underline" href="">Account</a>
                             <a className="mb-2 underline" href="">Netflix Shop</a>
                             <a className="mb-2 underline" href="">Terms of Use</a>
                             <a className="mb-2 underline" href="">Contact Us</a>
                             <a className="mb-2 underline" href="">Only on Netflix</a>
                         </div>
-                        <div className=" flex flex-col mr-50 " >
+                        <div className=" flex flex-col mr-2 md:mr-50 " >
                             <a className="mb-2 underline" href="">Media Center</a>
                             <a className="mb-2 underline" href="">Redeem Gift </a>
                             <a className="mb-2 underline" href="">Privacy</a>
