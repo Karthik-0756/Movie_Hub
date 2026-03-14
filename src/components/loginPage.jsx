@@ -4,7 +4,7 @@ import bgImage from "../assets/loginBG.jpg";
 import axios from "axios";
 const loginPage = () => {
     const navigate = useNavigate();
-
+    const [BERes , setBERes]= useState('');
     const [user , SetUser] = useState(
         {
             name:'',
@@ -21,7 +21,8 @@ const loginPage = () => {
     const handleShow=async(e)=>{
          e.preventDefault(); 
         const response =await axios.post("https://movie-hub-backend-zo2m.onrender.com/login/newUser",user)
-        alert(response.data)
+        // alert(response.data)
+        setBERes(response.data)
        if (response.data === "success"){
          navigate('/landingPage');
        }
@@ -50,13 +51,13 @@ const loginPage = () => {
                   <div className="md:ml-140 ml-10 mt-40 border-2  w-80  md:w-100 md:h-100 text-white    ">
                         <h1 className="text-3xl text-center mt-5 text-red-500 font-bold ">Login</h1>
                         <form onSubmit={handleShow} className="ml-10 mt-15">
-                            
-                            <input type="text" required name="name" onChange={handleUser} placeholder="Enter your Phone Number" className="border-2 mb-8 rounded w-60 md:w-80 p-3" />
+                            <div className="text-red-800 mb-2">{BERes && <p>{BERes}</p>}</div>
+                            <input type="text" required name="name" onChange={handleUser} placeholder="Enter your Phone Number" className="border-2  mb-8 rounded w-60 md:w-80 p-3" />
                             <input type="password" required name="password" onChange={handleUser} placeholder="Enter your Password" className="border-2 rounded w-60 md:w-80 p-3" />
                             <button   className="w-20 h-10 bg-red-400 rounded text-m hover:bg-red-500 cursor-pointer text-white mt-5  ">Login</button>
 
                         </form>
-                        <div className="flex ml-10 md:ml-25 mt-8 mb-5">
+                        <div className="flex ml-10 md:ml-25 mt-8 pb-5">
                             <p className="text-m ">Dont you have account?</p>
                             <span onClick={() => navigate("/signIn")} className="text-blue-400 text-m cursor-pointer underline">  Sign in</span>
                         </div>
