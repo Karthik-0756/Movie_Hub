@@ -9,6 +9,7 @@ const MyListHomePage = () => {
                 <div className="text-8xl mb-6">
                     😔
                 </div>
+                
 
                 <h1 className="text-5xl font-semibold">Your List is Empty</h1>
 
