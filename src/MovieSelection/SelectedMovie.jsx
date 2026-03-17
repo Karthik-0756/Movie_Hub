@@ -63,6 +63,16 @@ const SelectedMovie = () => {
         // })
 
     }
+    const languageMap = {
+        en: "English",
+        ta: "Tamil",
+        ja: "Japanese",
+        es: "Spanish",
+        zh: "Chinese", // ⚠️ correct code (not "cn")
+        fr: "French",
+        da: "Danish",
+        te: "Telugu",
+    };
 
 
     return (
@@ -129,7 +139,9 @@ const SelectedMovie = () => {
                             </div>
                             <div className="mt-10 md:ml-20 flex">
                                 <p className="mr-2">Language :  </p>
-                                {movie.original_language == "en" ? "English" : ""}
+                                {languageMap[movie.original_language || "unknown"]}
+                             
+                                
                             </div>
 
                         </div>

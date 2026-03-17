@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const HomePageTrending = () => {
+const TrendingMovies = () => {
     const defaultApi = "https://api.themoviedb.org/3/movie/popular?api_key=941d5693ffe3ad457206af43b7ca3d00";
     const [popular, setPopular] = useState([]);
 
@@ -33,7 +33,7 @@ const HomePageTrending = () => {
                                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                     alt={movie.title}
                                     className="w-full h-60   object-cover cursor-pointer "
-                                    onClick={()=>{navigate("/login")}}
+                                    onClick={()=>{navigate(`/selectedMovie/${movie.id}`)}}
                                 />
                                 
                             
@@ -48,4 +48,4 @@ const HomePageTrending = () => {
         </div>
     )
 }
-export default HomePageTrending;
+export default TrendingMovies;

@@ -8,6 +8,7 @@ import bgImage from '../assets/hero_banner.jpg';
 import heroInfo from '../assets/hero_title.png'
 import NavBar from "./NavBar";
 import { useNavigate } from "react-router-dom";
+import TrendingMovies from "./TrendingMovies";
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -20,7 +21,7 @@ const LandingPage = () => {
 
             {/* Movies Content: Moved outside the hero div to sit on the black background */}
             <div className="md:mx-20 px-4 md:px-0 -mt-15 relative z-10 space-y-10 ">
-                <HomePageTrending />
+                <TrendingMovies/>
                 <ActionMovies />
                 <AdventureMovie />
                 <ComedyMovies />

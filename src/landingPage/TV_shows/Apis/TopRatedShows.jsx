@@ -1,6 +1,7 @@
 import React from "react";
 import { useState,useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const TopRatedShows = ()=>{
      const api = "https://api.themoviedb.org/3/tv/top_rated?api_key=941d5693ffe3ad457206af43b7ca3d00"
@@ -18,6 +19,7 @@ const TopRatedShows = ()=>{
         fetchMovie();
 
     }, [])
+     const navigate = useNavigate();
     return(
         <div>
             <div className="mt-2 mb-20 flex overflow-x-auto gap-2 flex-nowrap scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -28,7 +30,7 @@ const TopRatedShows = ()=>{
                                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                     alt={movie.title}
                                     className="w-full h-60  object-cover  "
-                                    onClick={()=>selectedMovie(movie.id)}
+                                    onClick={()=>{navigate(`/selectedMovie/${movie.id}`)}}
                                 />
                             </div>
                         </div>

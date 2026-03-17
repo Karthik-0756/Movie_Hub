@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PopularMovies = () => {
     const api = "https://api.themoviedb.org/3/movie/popular?api_key=941d5693ffe3ad457206af43b7ca3d00"
@@ -17,6 +18,7 @@ const PopularMovies = () => {
         fetchMovie();
 
     }, [])
+      const navigate = useNavigate();
     return(
         <div>
             <div className="mt-2 mb-20 flex overflow-x-auto gap-2 flex-nowrap scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -27,7 +29,7 @@ const PopularMovies = () => {
                                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                     alt={movie.title}
                                     className="w-full h-60  object-cover  "
-                                    onClick={()=>selectedMovie(movie.id)}
+                                   onClick={()=>{navigate(`/selectedMovie/${movie.id}`)}}
                                 />
                             </div>
                         </div>
