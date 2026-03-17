@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../NavBar";
 import PopularMovies from "./Apis/PopularMovies";
 import TopRatedMoives from "./Apis/TopRatedMovies";
-import UpComingMovies from "./Apis/Upcomingmovies";
+import UpComingMovies from "./Apis/UpComingMovies";
 import NowPlayingMovies from "./Apis/NowPlayingMovies";
 import HomepageFooter from "../../components/HomepageFooter";
 const MovieHomePage = () =>{
