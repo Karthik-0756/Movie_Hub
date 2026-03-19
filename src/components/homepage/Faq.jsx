@@ -14,15 +14,23 @@ function Accordion() {
   const faq = [
     {
       question: "What is MovieHub?",
-      answer: "MovieHub is a movie information service.",
+      answer: "Movie Hub is an online platform where users can explore trending movies, TV shows, and get details like ratings, trailers, and descriptions.",
     },
     {
       question: "How much does it cost?",
       answer: "It free for everyone to use.",
     },
     {
-      question: "Is it give original movie?",
-      answer: "Yes, moviehub gives a real-time movie updates",
+      question: "Can I watch movies directly on Movie Hub?",
+      answer: "No, Movie Hub does not host movies. It only provides information, trailers, and links to official streaming platforms.",
+    },
+    {
+      question: "Why is a movie not available in my region?",
+      answer: "Some movies are restricted based on region due to licensing and distribution rights.",
+    },
+    {
+      question: "Can I see trailers for movies?",
+      answer: "Yes, Movie Hub provides official trailers for most movies directly on the platform.",
     },
   ];
 
